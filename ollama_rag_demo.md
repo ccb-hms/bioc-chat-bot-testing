@@ -35,11 +35,7 @@ This will try to demonstrate running llama2 on O2 cluster with a local Chroma ve
 
 
 
-8. since the service is running on the compute node at PORT 11434, requests to the model can be sent as API calls such as 
-`curl -X POST http://localhost:11434/api/generate -d '{
-  "model": "llama2",
-  "prompt":"Why is the sky blue?"
- }'`
+8. since the service is running on the compute node at PORT 11434, requests to the model can used in python scripts, we will use a python terminal session to prototype the process.
 
 ```python
 from langchain.llms import Ollama
