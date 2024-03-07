@@ -98,6 +98,20 @@ get_all_package_artifacts <- function() {
 #     chrome_print(url, file = "my_report.pdf")
 # }
 
+download_html_as_pdf <- function(csv_file, path) {
+
+    bioc_package_artifacts <- read_csv("bioc_package_artifacts.csv")
+    
+    htmls_only <- bioc_package_artifacts |> 
+        filter(link_text == "HTML")
+        
+    for (html in htmls_only$link) {
+        message("html printed: ", html)
+      
+        chrome_print(input = html, format = "pdf")
+    }    
+}
+
 download_non_htmls <- function(file) {
     res <- read_csv(file)
 
