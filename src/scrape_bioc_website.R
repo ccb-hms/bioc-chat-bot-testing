@@ -85,19 +85,7 @@ get_all_package_artifacts <- function() {
 }
 
 
-## WIP
-# download_html_as_pdf <- function() {
-    ## library(pagedown)
-    
-    ## Install wkhtmltopdf if not already installed
-    ## You can find installation instructions online
-
-#     url <- "https://www.example.com/your_html_page"
-#     
-#     ## Render the HTML using headless Chrome and save as PDF
-#     chrome_print(url, file = "my_report.pdf")
-# }
-
+## Download HTML docs using a headless chrome browser as PDF
 download_html_as_pdf <- function(csv_file = "bioc_package_artifacts.csv") {
 
     bioc_package_artifacts <- read_csv("bioc_package_artifacts.csv")
@@ -122,6 +110,7 @@ download_html_as_pdf <- function(csv_file = "bioc_package_artifacts.csv") {
     }}
 }
 
+## Download all other files that are not HTMLS
 download_non_htmls <- function(file) {
     res <- read_csv(file)
 
