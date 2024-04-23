@@ -1,0 +1,151 @@
+category,ground_truth,question,error
+Swapped arguments,"library(SummarizedExperiment)
+
+nrows <- 200; ncols <- 6
+counts <- matrix(runif(nrows * ncols, 1, 1e4), nrows)
+rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)),
+                     IRanges(floor(runif(200, 1e5, 1e6)), width=100),
+                     strand=sample(c(""+"", ""-""), 200, TRUE),
+                     feature_id=sprintf(""ID%03d"", 1:200))
+colData <- DataFrame(Treatment=rep(c(""ChIP"", ""Input""), 3),
+                     row.names=LETTERS[1:6]) 
+rse <- SummarizedExperiment(assays=SimpleList(counts=counts),
+                            rowRanges=rowRanges, colData=colData)","library(SummarizedExperiment)
+
+nrows <- 200; ncols <- 6
+counts <- matrix(runif(nrows * ncols, 1, 1e4), nrows)
+rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)),
+                     IRanges(floor(runif(200, 1e5, 1e6)), width=100),
+                     strand=sample(c(""+"", ""-""), 200, TRUE),
+                     feature_id=sprintf(""ID%03d"", 1:200))
+colData <- DataFrame(Treatment=rep(c(""ChIP"", ""Input""), 3),
+                     row.names=LETTERS[1:6]) 
+rse <- SummarizedExperiment(assays=SimpleList(counts=counts),
+                            rowRanges=colData, colData=rowRanges)","Error in validObject(.Object) :
+  invalid class “RangedSummarizedExperiment” object: 1: invalid object for slot ""rowRanges"" in class ""RangedSummarizedExperiment"": got class ""DFrame"", should be or extend class ""GenomicRanges_OR_GRangesList""
+invalid class “RangedSummarizedExperiment” object: 2:
+        'x@assays' is not parallel to 'x'"
+Inconsistent argument values,"library(SummarizedExperiment)
+
+nrows <- 200
+ncols <- 6
+counts <- matrix(runif(1200, 1, 1e4), nrows)
+
+rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)),
+                         IRanges(floor(runif(200, 1e5, 1e6)), width=100),
+                         strand=sample(c(""+"", ""-""), 200, TRUE),
+                         feature_id=sprintf(""ID%03d"", 1:200))
+
+colData <- DataFrame(Treatment=rep(c(""ChIP"", ""Input""), 3),
+                         row.names=LETTERS[1:6])
+
+SummarizedExperiment(assays=list(counts=counts),
+                         rowRanges=rowRanges, colData=colData)","library(SummarizedExperiment)
+
+nrows <- 200
+ncols <- 6
+counts <- matrix(runif(1400, 1, 1e4), nrows)
+
+rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)),
+                         IRanges(floor(runif(200, 1e5, 1e6)), width=100),
+                         strand=sample(c(""+"", ""-""), 200, TRUE),
+                         feature_id=sprintf(""ID%03d"", 1:200))
+
+colData <- DataFrame(Treatment=rep(c(""ChIP"", ""Input""), 3),
+                         row.names=LETTERS[1:6])
+
+SummarizedExperiment(assays=list(counts=counts),
+                         rowRanges=rowRanges, colData=colData)","Error in validObject(.Object) :
+  invalid class “SummarizedExperiment” object:
+	nb of cols in 'assay' (7) must equal nb of rows in 'colData' (6)"
+Invalid input type,"library(SummarizedExperiment)
+
+counts <- matrix(runif(1200, 1, 1e4), nrows)
+
+rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)),
+                         IRanges(floor(runif(200, 1e5, 1e6)), width=100),
+                         strand=sample(c(""+"", ""-""), 200, TRUE),
+                         feature_id=sprintf(""ID%03d"", 1:200))
+
+colData <- DataFrame(Treatment=rep(c(""ChIP"", ""Input""), 3),
+                         row.names=LETTERS[1:6])
+
+se = SummarizedExperiment(assays=list(counts=counts),
+                         rowRanges=rowRanges, colData=colData)","library(SummarizedExperiment)
+
+counts <- as.data.frame(matrix(runif(1200, 1, 1e4), nrows))
+
+rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)),
+                         IRanges(floor(runif(200, 1e5, 1e6)), width=100),
+                         strand=sample(c(""+"", ""-""), 200, TRUE),
+                         feature_id=sprintf(""ID%03d"", 1:200))
+
+colData <- DataFrame(Treatment=rep(c(""ChIP"", ""Input""), 3),
+                         row.names=LETTERS[1:6])
+
+se = SummarizedExperiment(assays=list(counts=counts),
+                         rowRanges=rowRanges, colData=colData)","Error in SummarizedExperiment(assays = list(counts = counts), rowRanges = rowRanges,  :
+  the rownames and colnames of the supplied assay(s) must be NULL or identical to those of the RangedSummarizedExperiment object (or derivative) to construct"
+Antipattern: accessors,"library(SummarizedExperiment)
+nrows <- 200
+ncols <- 6
+counts <- matrix(runif(1200, 1, 1e4), nrows)
+se <- SummarizedExperiment(assays=list(counts=counts))
+assay(se, ""counts"")","library(SummarizedExperiment)
+nrows <- 200
+ncols <- 6
+counts <- matrix(runif(1200, 1, 1e4), nrows)
+se <- SummarizedExperiment(assays=list(counts=counts))
+se@assays@data@listData$counts",
+Antipattern: Row-wise modification of data in a loop,"df <- data.frame(a = runif(1000, min = 0, max = 2*pi))
+df$a <- df$a * 180/pi","df <- data.frame(a = runif(1000, min = 0, max = 2*pi))
+for (i in nrow(df[, 1])) {
+    df[i,1] <- df[i,1] * 180/pi
+}",
+Missing reducedDim,"library(scRNAseq)
+library(scater)
+sce.zeisel <- ZeiselBrainData()
+
+library(org.Mm.eg.db)
+rowData(sce.zeisel)$Ensembl <- mapIds(org.Mm.eg.db,
+                                          keys=rownames(sce.zeisel),
+                                          keytype=""SYMBOL"",
+                                          column=""ENSEMBL"")
+sce.zeisel <- runUMAP(sce.zeisel)
+plotUMAP(sce.zeisel)","library(scRNAseq)
+library(scater)
+sce.zeisel <- ZeiselBrainData()
+
+library(org.Mm.eg.db)
+rowData(sce.zeisel)$Ensembl <- mapIds(org.Mm.eg.db,
+                                          keys=rownames(sce.zeisel),
+                                          keytype=""SYMBOL"",
+                                          column=""ENSEMBL"")
+plotUMAP(sce.zeisel)","Error in value[[3L]](cond) :
+  invalid subscript 'type' in 'reducedDim(<SingleCellExperiment>, type=""character"", ...)':
+  'UMAP' not in 'reducedDimNames(<SingleCellExperiment>)'"
+Accessing by rowData,"library(scRNAseq)
+sce.zeisel <- ZeiselBrainData()
+
+library(org.Mm.eg.db)
+rowData(sce.zeisel)$Ensembl <- mapIds(org.Mm.eg.db,
+                                          keys=rownames(sce.zeisel),
+                                          keytype=""SYMBOL"",
+                                          column=""ENSEMBL"")
+sce.zeisel[""Zyx""]","library(scRNAseq)
+sce.zeisel <- ZeiselBrainData()
+
+library(org.Mm.eg.db)
+rowData(sce.zeisel)$Ensembl <- mapIds(org.Mm.eg.db,
+                                          keys=rownames(sce.zeisel),
+                                          keytype=""SYMBOL"",
+                                          column=""ENSEMBL"")
+sce.zeisel[""ENSMUSG00000029860""]","Error in SummarizedExperiment:::.SummarizedExperiment.charbound(subset,  :
+  index out of bounds: ENSMUSG00000029860"
+Old install method,"if (!require(""BiocManager"", quietly = TRUE))
+    install.packages(""BiocManager"")
+BiocManager::install(""GenomicFeatures"")","source(""https://bioconductor.org/biocLite.R"")
+BiocInstaller::biocLite(""GenomicFeatures"")","Error: With R version 3.5 or greater, install Bioconductor packages using BiocManager; see https://bioconductor.org/install"
+Antipattern: Use is() instead of class() == and class() !=,"m <- matrix(1:4, nrow = 2); if(is.matrix(m)) ""This is a matrix"" else ""This is not a matrix""","m <- matrix(1:4, nrow = 2); if(class(m) == ""matrix"") ""This is a matrix"" else ""This is not a matrix""","Error in if (class(m) == ""matrix"") ""This is a matrix"" else ""This is not a matrix"" :  the condition has length > 1"
+Package not loaded via library,"library(GenomicRanges); rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)), IRanges(floor(runif(200, 1e5, 1e6)), width=100), strand=sample(c(""+"", ""-""), 200, TRUE), feature_id=sprintf(""ID%03d"", 1:200))","rowRanges <- GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)), IRanges(floor(runif(200, 1e5, 1e6)), width=100), strand=sample(c(""+"", ""-""), 200, TRUE), feature_id=sprintf(""ID%03d"", 1:200))","Error in GRanges(rep(c(""chr1"", ""chr2""), c(50, 150)), IRanges(floor(runif(200,  :  could not find function ""GRanges"""
+Antipattern: Code syntax: Avoid partial argument matching,"f <- function(x) if(is.logical(x)) ""logical"" else stop(""not logical""); T <- ""a""; f(x = TRUE)","f <- function(x) if(is.logical(x)) ""logical"" else stop(""not logical""); T <- ""a""; f(x = T)",Error in f(x = T) : not logical
