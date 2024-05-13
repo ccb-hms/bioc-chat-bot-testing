@@ -51,8 +51,8 @@ model = SentenceTransformer('multi-qa-MiniLM-L6-cos-v1')
 # In[5]:
 
 
-q_df = pl.read_csv('/home/ang9994/bioc_ai/data/gpt4_with_scramble.csv', separator = "\t")
-q_df2 = pl.read_csv('/home/ang9994/bioc_ai/data/llama_bioc_qa.csv')
+q_df = pl.read_csv('azure-gpt4-RAG/gpt4_with_scramble.csv', separator = "\t")
+q_df2 = pl.read_csv('llama2-RAG/llama_bioc_qa.csv')
 q_df.select(pl.col("Question", "Response"))
 
 
@@ -81,14 +81,14 @@ answers = q_df['Response'].to_list()
 # embed the curated responses ('answers' in this case)
 grd_embed = model.encode(answers)
 grd_embed2 = model2.encode(answers)
-grd_embed.shape # no parentheses, DUH GHAZI! numpy sucks.
+grd_embed.shape 
 
 
 # In[10]:
 
 
-pl.from_numpy(grd_embed).write_csv("/home/ang9994/bioc_ai/output/ground_answer_embed.csv")
-pl.from_numpy(grd_embed2).write_csv("/home/ang9994/bioc_ai/output/m2/ground_answer_embed_m2.csv")
+pl.from_numpy(grd_embed).write_csv("output/ground_answer_embed.csv")
+pl.from_numpy(grd_embed2).write_csv("output/m2/ground_answer_embed_m2.csv")
 
 
 # In[11]:
@@ -123,7 +123,7 @@ df = pl.DataFrame(
 
 print(df)
 
-df.write_csv("/home/ang9994/bioc_ai/output/model_df.csv")
+df.write_csv("output/model_df.csv")
 
 
 # In[13]:
@@ -144,8 +144,6 @@ for idx, query in enumerate(questions):
     query_embedding = model.encode(ans_list, convert_to_tensor=True).cpu().numpy()
     m2_emb = model2.encode(ans_list, convert_to_tensor=True).cpu().numpy()
 
-    pl.from_numpy(query_embedding).write_csv("/home/ang9994/bioc_ai/output/" + str(idx) + ".csv")
-    pl.from_numpy(m2_emb).write_csv("/home/ang9994/bioc_ai/output/m2/" + str(idx) + "_m2.csv")
+    pl.from_numpy(query_embedding).write_csv("output/" + str(idx) + ".csv")
+    pl.from_numpy(m2_emb).write_csv("output/m2/" + str(idx) + "_m2.csv")
 
-
-# Do all the evaluations in RStudio because Jupyter is what you'd get if you turned Jar Jar Binks into an IDE.

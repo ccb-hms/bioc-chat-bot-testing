@@ -1,7 +1,7 @@
 library(tidyverse)
 library(words)
 
-d = read_csv("data/top_10_qs_with_azure_RAG.csv")
+d = read_csv("azure-gpt4-RAG/top_10_qs_with_azure_RAG.csv")
 
 scramble = function(sent) {
     words = strsplit(sent, " ")[[1]]
@@ -60,4 +60,4 @@ d = d |>
            reembed_ground_truth = Response) 
 
 d |> 
-    write_tsv('data/gpt4_with_scramble.csv', quote = "all")
+    write_tsv('azure-gpt4-RAG/gpt4_with_scramble.csv', quote = "all")

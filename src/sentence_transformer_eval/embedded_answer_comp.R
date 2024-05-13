@@ -4,12 +4,12 @@ library(tibble)
 library(ggplot2)
 
 options(digits = 2)
-q1 = fread("data/gpt4_with_scramble.csv")
-q2 = fread("data/llama_bioc_qa.csv")
+q1 = fread("azure-gpt4-RAG/gpt4_with_scramble.csv")
+q2 = fread("llama2-RAG/llama_bioc_qa.csv")
 
 q_df = q1 |> cbind(q2 |> slt(5:6)) |> as_tibble()
 
-grd_ans = fread("~/bioc_ai/output/ground_answer_embed.csv") |> 
+grd_ans = fread("output/ground_answer_embed.csv") |> 
     mtt(QID = paste0("question", 1:10)) |> 
     melt(id.vars = "QID") |> 
     roworder(QID) |> 
@@ -106,4 +106,4 @@ tmp |> as.data.table() |>
     scale_color_manual(values = pals::cols25()) + 
     scale_size_area()
 
-ggsave("~/Desktop/tmp.png", w = 12, h = 9)    
+# ggsave("~/Desktop/tmp.png", w = 12, h = 9)    

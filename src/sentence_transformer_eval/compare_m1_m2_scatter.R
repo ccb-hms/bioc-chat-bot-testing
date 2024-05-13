@@ -1,18 +1,18 @@
-q1 = fread("~/bioc_ai/data/gpt4_with_scramble.csv")
-q2 = fread("~/bioc_ai/data/llama_bioc_qa.csv")
+q1 = fread("azure-gpt4-RAG/gpt4_with_scramble.csv")
+q2 = fread("llama2-RAG/llama_bioc_qa.csv")
 
 q_df = q1 |> cbind(q2 |> slt(5:6)) |> as_tibble()
 
-grd_ans = fread("~/bioc_ai/output/ground_answer_embed.csv") |> 
+grd_ans = fread("output/ground_answer_embed.csv") |> 
     mtt(QID = paste0("question", 1:10)) |> 
     melt(id.vars = "QID") |> 
     roworder(QID) |> 
     dplyr::rename(grd_val = value)
 
-ans_list = list.files("~/bioc_ai/output/", pattern = "[0-9].csv", full.names = TRUE) |> 
+ans_list = list.files("output/", pattern = "[0-9].csv", full.names = TRUE) |> 
     lapply(fread)
 
-model_df = fread("~/bioc_ai/output/model_df.csv")
+model_df = fread("output/model_df.csv")
 
 ans_df = ans_list |> 
     rbindlist() |> 
@@ -46,13 +46,13 @@ plot_input <- cos_sim_df |>
 
 q_df = q1 |> cbind(q2 |> slt(5:6)) |> as_tibble()
 
-grd_ans = fread("~/bioc_ai/output/m2/ground_answer_embed_m2.csv") |> 
+grd_ans = fread("output/m2/ground_answer_embed_m2.csv") |> 
     mtt(QID = paste0("question", 1:10)) |> 
     melt(id.vars = "QID") |> 
     roworder(QID) |> 
     dplyr::rename(grd_val = value)
 
-ans_list = list.files("~/bioc_ai/output/m2", pattern = "[0-9]_m2.csv", full.names = TRUE) |> 
+ans_list = list.files("output/m2", pattern = "[0-9]_m2.csv", full.names = TRUE) |> 
     lapply(fread)
 
 ans_df = ans_list |> 
