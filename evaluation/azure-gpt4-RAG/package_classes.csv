@@ -1,0 +1,466 @@
+"Package","Classes","Total"
+"affxparser","",0
+"affy","AffyBatch, ProbeSet, ProgressBarText",3
+"affyio","",0
+"affyPLM","PLMset",1
+"AIMS","",0
+"ALDEx2","aldex.clr",1
+"ANCOMBC","",0
+"annaffy","aafList, aafIntensity, aafProbe, aafSigned, aafLocusLink, aafSymbol, aafGO, aafPubMed, aafPathway, aafGOItem, aafChromosome, aafPathwayItem, aafDescription, aafCytoband, aafTable, aafChromLoc, aafGenBank",17
+"annotate","chromLocation, FramedHTMLPage, HTMLPage, pubMedAbst, homoData",5
+"AnnotationDbi","Go3AnnDbBimap, GODb, ProbeGo3AnnDbBimap, ProbeIpiAnnDbMap, FlatBimap, GoAnnDbBimap, OrgDb, L2Rlink, AnnDbBimap, ReactomeDb, ProbeAnnDbMap, AnnDbObj, Bimap, GOTermsAnnDbBimap, AgiAnnDbMap, GOTerms, GOFrame, KEGGFrame, AnnDbMap, IpiAnnDbMap, ChipDb, GOAllFrame, AnnObj, ProbeAnnDbBimap, AnnotationDb",25
+"AnnotationFilter","ExonIdFilter, TxStartFilter, DoubleFilter, SeqStrandFilter, CdsStartFilter, EntrezFilter, TxIdFilter, GeneNameFilter, UniprotFilter, TxBiotypeFilter, CharacterFilter, SymbolFilter, AnnotationFilter, GRangesFilter, SeqNameFilter, AnnotationFilterList, GeneBiotypeFilter, ExonRankFilter, CdsEndFilter, ExonNameFilter, TxEndFilter, ExonEndFilter, GenenameFilter, GeneStartFilter, ProteinIdFilter, IntegerFilter, TxNameFilter, GeneEndFilter, GeneIdFilter, ExonStartFilter",30
+"AnnotationForge","AnnDbPkgSeed",1
+"AnnotationHub","AnnotationHub, Hub, AnnotationHubResource",3
+"AnnotationHubData","UCSCTrackImportPreparer, AnnotationHubMetadata, EnsemblFastaImportPreparer, HubMetadata, ImportPreparer, EnsemblGtfImportPreparer, Inparanoid8ImportPreparer, UCSCChainPreparer, NCBIImportPreparer, Grasp2ImportPreparer",10
+"annotatr","",0
+"AnVIL","Service, Dockstore, Leonardo, Rawls, Terra",5
+"apeglm","",0
+"aroma.light","",0
+"ArrayExpress","",0
+"arrayQualityMetrics","aqmReportModule, outlierDetection",2
+"AUCell","",0
+"ballgown","ballgown",1
+"bambu","",0
+"bamsignals","CountSignals",1
+"basilisk","BasiliskEnvironment",1
+"basilisk.utils","",0
+"batchelor","BatchelorParam, ClassicMnnParam, RescaleParam, FastMnnParam, RegressParam, NoCorrectParam",6
+"BayesSpace","",0
+"baySeq","countData, densityFunction",2
+"beachmat","",0
+"beadarray","ExpressionSetIllumina, BeadLevelList, beadLevelData, beadRegistrationData, illuminaChannel, limmaResults",6
+"BeadDataPackR","",0
+"Biobase","aggregator, ExpressionSet, Versions, ScalarInteger, container, eSet, Versioned, AssayData, SnpSet, MIAME, MIAxE, VersionsNull, ScalarObject, data.frameOrNULL, ScalarCharacter, NChannelSet, characterORMIAME, ScalarNumeric, VersionedBiobase, annotatedDataset, MultiSet, AnnotatedDataFrame, ScalarLogical",23
+"biobroom","",0
+"BiocBaseUtils","",0
+"BiocCheck","BiocCheck",1
+"BiocFileCache","",0
+"BiocGenerics","file, dist, AsIs, bzfile, sockconn, gzfile, connection, character_OR_connection, unz, pipe, url, textConnection, terminal, gzcon, fifo",15
+"BiocIO","CompressedFile, BiocFileList, BiocFile",3
+"BiocNeighbors","AnnoyIndex, BiocNeighborIndex, KmknnParam, VptreeParam, VptreeIndex, HnswParam, ExhaustiveParam, HnswIndex, KmknnIndex, AnnoyParam, ExhaustiveIndex, BiocNeighborParam",12
+"BiocParallel","MulticoreParam, DoparParam, SerialParam, BiocParallelParam, BatchtoolsParam, SnowParam, BPValidate",7
+"BiocSet","OBOSet, BiocSet",2
+"BiocSingular","LowRankMatrix, ExactParam, IrlbaParam, BiocSingularParam, FastAutoParam, RandomParam, LowRankMatrixSeed",7
+"BiocStyle","",0
+"biocthis","",0
+"BiocVersion","",0
+"biocViews","RepositoryDetail, bvTitle, bvSubViews, bvParentViews, pdAuthorMaintainerInfo, BiocView, pdDetailsInfo, rdPackageTable, bvPackageTable, Htmlized, pdVigsAndDownloads, pdDownloadInfo, pdVignetteInfo, pdDescriptionInfo, PackageDetail",15
+"BiocWorkflowTools","",0
+"bioDist","",0
+"biomaRt","Mart",1
+"biomformat","biom",1
+"BioNERO","",0
+"BioNet","",0
+"Biostrings","BStringSet, RNAMultipleAlignment, XStringSet, AAMultipleAlignment, PDict, SolexaQuality, XStringQuality, QualityScaledRNAStringSet, MTB_PDict, ACtree2, PhredQuality, Twobit, RNAStringSet, QualityScaledDNAStringSet, Expanded_TB_PDict, MaskedBString, MaskedAAString, ByPos_MIndex, MaskedRNAString, XStringSetList, DNAStringSetList, DNAMultipleAlignment, AAStringSet, AAStringSetList, MaskedXString, BString, MultipleAlignment, MIndex, XStringPartialMatches, BStringSetList, XStringViews, DNAString, RNAStringSetList, PDict3Parts, QualityScaledBStringSet, AAString, TB_PDict, IlluminaQuality, RNAString, QualityScaledAAStringSet, DNAStringSet, XString, QualityScaledXStringSet, PreprocessedTB, MaskedDNAString",45
+"biovizBase","",0
+"bluster","DmmParam, SNNGraphParam, SomParam, FixedNumberParam, AgnesParam, NNGraphParam, KNNGraphParam, PamParam, AffinityParam, HclustParam, BlusterParam, TwoStepParam, ClaraParam, HierarchicalParam, KmeansParam, DbscanParam, DianaParam, MbkmeansParam",18
+"BSgenome","OnDiskLongTable_old, ODLT_SNPlocs, OldFashionSNPlocs, GRanges_OR_NULL, SNPlocs, MaskedBSgenome, OnDiskLongTable, XtraSNPlocs, BSgenomeViews, BSgenome, InjectSNPsHandler",11
+"bsseq","hasGRanges, matrixOrNULL, BSseqTstat, BSseq, BSseqStat",5
+"bumphunter","",0
+"BumpyMatrix","BumpyCharacterMatrix, BumpyAtomicMatrix, BumpyLogicalMatrix, BumpyDataFrameMatrix, BumpyMatrix, BumpyIntegerMatrix, BumpyNumericMatrix",7
+"BUSpaRse","",0
+"CATALYST","",0
+"Category","AffyDatPkg, ChrBandTree, LinearMResult, PFAMHyperGResult, YeastDatPkg, ChrMapHyperGParams, HyperGParams, PFAMHyperGParams, LinearMParams, HyperGResultBase, KEGGHyperGResult, DatPkg, OBOCollectionDatPkg, Org.XX.egDatPkg, GOHyperGParams, ChrMapHyperGResult, ChrMapLinearMResult, LinearMResultBase, HyperGResult, KEGGHyperGParams, ChrMapLinearMParams",21
+"cBioPortalData","cBioPortal",1
+"celda","",0
+"CelliD","",0
+"CGHbase","cghRegions, cghRaw, cghSeg, cghCall",4
+"CGHcall","",0
+"ChemmineR","AP, SMI, jobToken, SMIset, FP, SDF, SDFset, FPset, SDFstr, APset",10
+"ChIPpeakAnno","annoGR, bindist, permPool",3
+"ChIPQC","ChIPQCexperiment, ChIPQCsample",2
+"ChIPseeker","csAnno",1
+"chipseq","",0
+"cicero","",0
+"ClassifyR","SelectParams, TransformParams, TrainParams, PredictParams, ModellingParams, CrossValParams, FeatureSetCollection, ClassifyResult",8
+"clusterExperiment","ClusterFunction, ClusterExperiment",2
+"clusterProfiler","groupGOResult",1
+"cmapR","",0
+"cn.mops","CNVDetectionResult",1
+"CoGAPS","CogapsResult, CogapsParams",2
+"ComplexHeatmap","Heatmap, Legends, AnnotationFunction, HeatmapList, ColorMapping, SingleAnnotation, HeatmapAnnotation, AdditiveUnit",8
+"CompoundDb","NameFilter, FormulaFilter, SpectrumIdFilter, IonIdFilter, MsmsMzRangeMinFilter, IonMzFilter, CompoundIdFilter, IonDb, MsBackendCompDb, ExactmassFilter, IonAdductFilter, MsmsMzRangeMaxFilter, InchiFilter, IonRtFilter, CompDb, InchikeyFilter",16
+"ConsensusClusterPlus","",0
+"cqn","",0
+"crlmm","PredictionRegion",1
+"csaw","readParam",1
+"ctc","",0
+"cummeRbund","CuffGeneSet, CuffFeature, CuffGene, CuffData, CuffSet, CuffFeatureSet, CuffDist",7
+"cytolib","",0
+"cytomapper","CytoImageList",1
+"CytoML","diva_workspace, flowjo_workspace",2
+"dada2","",0
+"DECIPHER","",0
+"DeconRNASeq","",0
+"decontam","",0
+"decoupleR","",0
+"DEFormats","",0
+"DEGreport","",0
+"DelayedArray","DelayedAbind, DelayedNaryOp, DelayedUnaryIsoOp, RealizationSink, arrayRealizationSink, RleArray, DelayedArray, DelayedAperm, RleMatrix, SolidRleArraySeed, ConstantArraySeed, RleRealizationSink, DelayedNaryIsoOp, DelayedArray1, DelayedMatrix, DelayedUnaryOp, ConstantMatrix, DelayedSetDimnames, ChunkedRleArraySeed, ConstantArray, SparseArraySeed, DelayedSubset, integer_OR_NULL, DelayedUnaryIsoOpStack, DelayedUnaryIsoOpWithArgs, DelayedSubassign, DelayedOp, RleArraySeed",28
+"DelayedMatrixStats","",0
+"demuxmix","Demuxmix",1
+"DEP","",0
+"DepecheR","",0
+"DEqMS","",0
+"derfinder","",0
+"derfinderHelper","",0
+"DESeq2","DESeqTransform, DESeqResults, DESeqDataSet",3
+"DEsingle","",0
+"destiny","DiffusionMap, DPT, Sigmas, GeneRelevance",4
+"DEXSeq","DEXSeqDataSet, DEXSeqResults",2
+"DiffBind","",0
+"diffcyt","",0
+"dir.expiry","",0
+"DirichletMultinomial","DMNGroup, DMN",2
+"distinct","",0
+"dittoSeq","",0
+"DMRcate","CpGannotated, DMResults",2
+"DNABarcodes","",0
+"DNAcopy","",0
+"DOSE","compareClusterResult, enrichResult, gseaResult",3
+"drawProteins","",0
+"DRIMSeq","",0
+"DropletUtils","",0
+"DSS","SeqCountSet",1
+"DynDoc","chunkList, Vignette, SweaveOptions, codeChunk, DynDoc, vignetteCode",6
+"EBarrays","",0
+"EBImage","Image",1
+"EBSeq","",0
+"EDASeq","SeqExpressionSet",1
+"edgeR","DGELRT, DGEExact, DGEGLM, DGEList, TopTags",5
+"eds","",0
+"EnhancedVolcano","",0
+"ENmix","rgDataSet, methDataSet",2
+"EnrichedHeatmap","",0
+"EnrichmentBrowser","",0
+"enrichplot","",0
+"ensembldb","TxIsCanonicalFilter, EnsDb, ProteinDomainSourceFilter, UniprotMappingTypeFilter, OnlyCodingTxFilter, ProtDomIdFilter, TxExternalNameFilter, UniprotDbFilter, TxSupportLevelFilter",9
+"EpiDISH","",0
+"escape","",0
+"ExperimentHub","ExperimentHub",1
+"ExperimentHubData","ExperimentHubMetadata",1
+"fastseg","",0
+"fgsea","",0
+"fishpond","",0
+"flowAI","",0
+"flowClean","",0
+"flowClust","flowDens, tmixFilterResultList, tmixFilter, flowClust, flowClustList, tmixFilterResult",6
+"flowCore","filters, filterList, normalization, unionFilter, logicalFilterResult, setOperationFilter, polygonGate, transformFilter, complementFilter, transformList, compensatedParameter, filterReference, randomFilterResult, transformReference, quadratic, splitscale, hyperlogtGml2, flowFrame, polytopeGate, rectangleGate, hyperlog, transform, dg1polynomial, timeFilter, manyFilterResult, filterResultList, transformMap, boundaryFilter, parameterFilter, filterResult, EHtrans, concreteFilter, logarithm, filterSummary, parameters, filterSummaryList, sampleFilter, subsetFilter, filtersList, kmeansFilter, asinhtGml2, logtGml2, multiRangeGate, expressionFilter, flowSet, sinht, ellipsoidGate, compensation, invsplitscale, logicletGml2, squareroot, filter, ratio, lintGml2, intersectFilter, unitytransform, exponential, parameterTransform, ratiotGml2, quadGate, asinht",61
+"flowDensity","CellPopulation",1
+"FlowSOM","",0
+"flowStats","norm2Filter, rangeFilter, curv1Filter, curv2Filter, lymphFilter",5
+"flowViz","",0
+"flowWorkspace","GatingSetList, cytoframe, booleanFilter, cytoset, GatingSet, GatingHierarchy",6
+"fmcsR","MCS",1
+"gage","",0
+"gcrma","",0
+"GDCRNATools","",0
+"gdsfmt","",0
+"genefilter","rowROC",1
+"GeneOverlap","GeneOverlapMatrix, GeneOverlap",2
+"geneplotter","",0
+"GENESIS","",0
+"GENIE3","",0
+"genomation","AnnotationByGeneParts, RandomEnrichment, AnnotationByFeature, ScoreMatrixList, ScoreMatrix",5
+"GenomeInfoDb","GenomeDescription, Seqinfo",2
+"GenomicAlignments","GappedReads, OverlapEncodings, GAlignmentsList, GAlignments, GAlignmentPairs",5
+"GenomicDataCommons","",0
+"GenomicFeatures","FeatureDb, TxDb",2
+"GenomicFiles","VcfStack, GenomicFiles, RangedVcfStack",3
+"GenomicInteractions","GenomicInteractions",1
+"GenomicRanges","CompressedGRangesList, Constraint_OR_NULL, GNCList, GPos, GenomicRanges_OR_GRangesList, GenomicRanges_OR_GenomicRangesList, GenomicPos, GRangesList, GenomicRanges_OR_missing, SimpleGenomicRangesList, GRanges, Constraint, GenomicRanges, StitchedGPos, UnstitchedGPos, GRangesFactor, SimpleGRangesList, IRanges_OR_IPos, GenomicRangesList, CompressedGenomicRangesList, DelegatingGenomicRanges",21
+"GenomicScores","GScores",1
+"GenVisR","Rainfall, Lolliplot, Clinical, MutSpectra, VEP, GMS, MutationAnnotationFormat, Waterfall",8
+"GEOmetadb","",0
+"GeomxTools","NanoStringGeoMxSet",1
+"GEOquery","",0
+"ggbio","GGbio, Ideogram, Plot, Tracks, Tracked, Grob",6
+"ggcyto","ggcyto_GatingSet, ggcyto, ggcyto_GatingLayout, ggcyto_flowSet",4
+"ggmsa","",0
+"ggtree","",0
+"ggtreeExtra","",0
+"GLAD","",0
+"Glimma","",0
+"glmGamPoi","",0
+"globaltest","gt.object, mlogit",2
+"GOfuncR","",0
+"GOSemSim","GOSemSimDATA",1
+"goseq","",0
+"GOstats","GOHyperGResult",1
+"gpls","",0
+"graph","edgeSetAM, attrData, graph, renderInfo, graphAM, edgeSet, graphBAM, simpleEdge, distGraph, MultiGraph, edgeSetNEL, graphNEL, multiGraph, clusterGraph, graphBase",15
+"graphite","Pathway, PathwayList, Pathways",3
+"GreyListChIP","GreyList",1
+"GSEABase","EntrezIdentifier, NullCollection, GOCollection, CollectionType, EnzymeIdentifier, KEGGCollection, AnnotationIdentifier, RefseqIdentifier, BroadCollection, CollectionIdType, GeneSet, GOAllFrameIdentifier, PfamCollection, NullIdentifier, UniprotIdentifier, GeneSetCollection, OBOCollection, PrositeCollection, SymbolIdentifier, ENSEMBLIdentifier, GeneColorSet, MapCollection, GenenameIdentifier, OMIMCollection, GeneIdentifierType, ComputedCollection, ChrlocCollection, ChrCollection, ExpressionSetCollection, PMIDCollection",30
+"GSVA","ssgseaParam, GsvaExprData, gsvaParam, zscoreParam, GsvaGeneSets, GsvaMethodParam, plageParam",7
+"Gviz","BiomartGeneRegionTrack, SequenceTrack, OverlayTrack, GeneRegionTrack, DataTrack, ReferenceAnnotationTrack, AnnotationTrack, StackedTrack, CustomTrack, ReferenceAlignmentsTrack, ReferenceDataTrack, ImageMap, SequenceBSgenomeTrack, DetailsAnnotationTrack, ReferenceGeneRegionTrack, SequenceDNAStringSetTrack, SequenceRNAStringSetTrack, ReferenceTrack, HighlightTrack, IdeogramTrack, ReferenceSequenceTrack, NumericTrack, DisplayPars, GenomeAxisTrack, GdObject, AlignmentsTrack, RangeTrack",27
+"gwascat","gwaswloc",1
+"GWASTools","GdsIntensityReader, GenotypeBlockIterator, IntensityData, SnpAnnotationDataFrame, NcdfGenotypeReader, GenotypeData, GenotypeIterator, SnpAnnotationSQLite, NcdfIntensityReader, NcdfReader, ScanAnnotationSQLite, GdsReader, GdsGenotypeReader, MatrixGenotypeReader, ScanAnnotationDataFrame",15
+"GWENA","",0
+"Harman","",0
+"HDF5Array","TENxRealizationSink, HDF5Matrix, TENxMatrixSeed, character_OR_H5File, H5FileID, H5DSetDescriptor, H5SparseMatrixSeed, ReshapedHDF5ArraySeed, CSC_H5SparseMatrixSeed, TENxMatrix, HDF5Array, CSC_H5ADMatrixSeed, HDF5ArraySeed, H5File, CSR_H5ADMatrixSeed, HDF5RealizationSink, H5ADMatrixSeed, Dense_H5ADMatrixSeed, ReshapedHDF5Matrix, ReshapedHDF5Array, H5ADMatrix, CSR_H5SparseMatrixSeed, H5SparseMatrix",23
+"heatmaps","Heatmap",1
+"Heatplus","",0
+"HiCcompare","",0
+"HilbertVis","",0
+"HMMcopy","",0
+"hopach","hdist",1
+"hpar","",0
+"HTSFilter","",0
+"Icens","",0
+"iClusterPlus","",0
+"IHW","",0
+"illuminaio","",0
+"impute","",0
+"InteractionSet","GInteractions, InteractionSet, ReverseStrictGInteractions, ContactMatrix, StrictGInteractions",5
+"InteractiveComplexHeatmap","",0
+"interactiveDisplayBase","",0
+"IRanges","PartitioningByEnd, SimpleManyToManyGrouping, BaseManyToManyGrouping, Pos, RleViewsList, CompressedList, SimpleManyToOneGrouping, GroupingIRanges, CompressedIntegerRangesList, IPosList, SimpleCharacterList, SimpleSplitDFrameList, IRangesList, LogicalList, SimpleComplexList, StitchedIPos, CompressedRangesList, H2LGrouping, CompressedDFrameList, IntegerList, ManyToManyGrouping, IPosRanges, IntegerRanges, DataFrameList, CompressedNormalIRangesList, CompressedManyToManyGrouping, AtomicList, CompressedCharacterList, IPos, CompressedAtomicList, NCLists, SimpleRleList, NormalIRangesList, SimpleSplitDataFrameList, ViewsList, Views, CompressedNumericList, ComplexList, SimpleIPosList, ManyToOneGrouping, CompressedSplitDataFrameList, CompressedLogicalList, SimpleIntegerList, SimpleIntegerRangesList, RangesList, CompressedIntegerList, RawList, PartitioningByWidth, CompressedPosList, CompressedIRangesList, CompressedIPosList, SimpleRawList, SplitDFrameList, Grouping, Ranges, SimpleViewsList, SimpleRleViewsList, CharacterList, CompressedRawList, FactorList, GroupingRanges, SimplePosList, PosList, SimpleAtomicList, UnstitchedIPos, NCList, SimpleNormalIRangesList, SplitDataFrameList, CompressedManyToOneGrouping, SimpleNumericList, MaskCollection, CompressedComplexList, PartitioningMap, RangedSelection, SimpleIRangesList, SimpleRangesList, CompressedGrouping, IntegerRanges_OR_missing, CompressedDataFrameList, Partitioning, NumericList, CompressedFactorList, IRanges, NormalIRanges, IntegerRangesList, CompressedSplitDFrameList, SimpleLogicalList, Dups, SimpleDataFrameList, CompressedRleList, DFrameList, SimpleDFrameList, SimpleGrouping, RleList, SimpleFactorList, RleViews",96
+"iSEE","ColumnTable, ExperimentColorMap, RowTable, ColumnDotPlot, Table, ColumnDataTable, SampleAssayPlot, ComplexHeatmapPlot, ReducedDimensionPlot, DotPlot, Panel, RowDotPlot, RowDataTable, RowDataPlot, FeatureAssayPlot, ColumnDataPlot",16
+"IsoformSwitchAnalyzeR","switchAnalyzeRlist",1
+"karyoploteR","",0
+"KEGGgraph","KEGGEdgeSubType, KEGGGroup, KEGGNode, KEGGGraphics, KEGGReaction, KEGGPathway, KEGGPathwayInfo, KEGGEdge",8
+"KEGGREST","",0
+"LBE","",0
+"LEA","",0
+"lefser","",0
+"lfa","",0
+"limma","TestResults, EListRaw, MDS, RGList, Roast, MAList, MArrayLM, LargeDataObject, EList",9
+"Linnorm","",0
+"lipidr","LipidomicsExperiment",1
+"LOLA","",0
+"LoomExperiment","LoomExperiment, RangedLoomExperiment, SingleCellLoomExperiment, LoomGraphs, LoomGraph",5
+"lpsymphony","",0
+"lumi","LumiBatch",1
+"M3C","",0
+"M3Drop","",0
+"Maaslin2","",0
+"made4","",0
+"maftools","GISTIC, MAF",2
+"MAGeCKFlute","",0
+"marray","marrayNorm, marrayInfo, marrayLayout, ShowLargeObject, marrayRaw",5
+"maSigPro","",0
+"MAST","",0
+"MatrixGenerics","matrix_OR_array_OR_table_OR_numeric",1
+"matter","matter_arr, matter_str, drle_fct, matter_fct, atoms, sparse_mat, sparse_vec, matter_list, matter, matter_mat, drle, matter_vec, sparse_arr",13
+"mbkmeans","",0
+"memes","",0
+"MeSHDbi","MeSHDb",1
+"MetaboAnnotation","CompAnnotationSource, CompareSpectraParam, MatchedSpectra, CompDbSource, Matched",5
+"MetaboCoreUtils","",0
+"metaCCA","",0
+"metagenomeSeq","fitFeatureModelResults, MRexperiment, fitZigResults",3
+"metapod","",0
+"methylKit","methylRaw, methylRawList, methylRawListDB, methylRawDB, methylBase, methylBaseDB, methylDiff, methylDiffDB",8
+"methylumi","MethyLumiM, MethyLumiQC, MethyLumiSet, MethyLumi, methylData",5
+"Mfuzz","",0
+"mia","",0
+"miaViz","",0
+"microbiome","",0
+"microbiomeMarker","postHocTest, microbiomeMarker, marker_table",3
+"MicrobiotaProcess","alphasample, diffAnalysisClass, MPSE, pcasample, ordplotClass",5
+"miloR","Milo",1
+"minet","",0
+"minfi","RatioSet, GenomicMethylSet, IlluminaMethylationManifest, GenomicRatioSet, RGChannelSetExtended, MethylSet, RGChannelSet, IlluminaMethylationAnnotation",8
+"missMethyl","",0
+"mixOmics","",0
+"MLInterfaces","prcompObj, projectedLearner, raboostCont, varImpStruct, prcomp, classifierOutput, clusteringSchema, learnerSchema, daboostCont, NULL_OR_list, xvalSpec, clusteringOutput, silhouette",13
+"MOFA2","MOFA",1
+"monocle","CellType, CellTypeHierarchy, CellDataSet",3
+"MotifDb","MotifList",1
+"msa","MsaMetaData, MsaDNAMultipleAlignment, MsaAAMultipleAlignment, MsaRNAMultipleAlignment",4
+"MsBackendMgf","MsBackendMgf",1
+"MsCoreUtils","",0
+"MsExperiment","MsExperimentFiles, MsExperiment",2
+"MsFeatures","AbundanceSimilarityParam, SimilarRtimeParam",2
+"msmsEDA","",0
+"msmsTests","",0
+"MSnbase","pSet, FoICollection, Spectrum1, Spectrum2, MSnSetList, MSpectra, Chromatogram, FeatComp, MSmap, MSnExp, Spectrum, OnDiskMSnExp, MSnSet, MIAPE, MzTab, ReporterIons, MChromatograms, FeaturesOfInterest, MSnProcess",19
+"MSnID","",0
+"MSstats","",0
+"MSstatsConvert","",0
+"MSstatsTMT","",0
+"MultiAssayExperiment","MultiAssayExperiment, MatchedAssayExperiment, ExperimentList",3
+"MultiDataSet","MultiDataSet, ResultSet",2
+"multiMiR","mmquery_bioc",1
+"multtest","MTP, EBMTP",2
+"MungeSumstats","",0
+"muscat","",0
+"muscle","",0
+"MutationalPatterns","region_cossim",1
+"mygene","MyGene",1
+"mzR","mzRpwiz, mzRnetCDF, mzRident, mzR",4
+"NanoStringNCTools","SignatureSet, NanoStringRccSet",2
+"ncdfFlow","ncdfFlowList, ncdfFlowSet",2
+"Nebulosa","",0
+"NOISeq","PCA, CountsBio, CD, Output, lengthbias, GCbias, Biodetection, Saturation",8
+"NormqPCR","",0
+"oligoClasses","CNSet, gSet, ExpressionPDInfo, NgsExpressionPDInfo, BeadStudioSetList, AffySNPPDInfo, BafLrrSet, ExpressionFeatureSet, NgsTilingPDInfo, oligoSnpSet, AffySNPCNVPDInfo, ff_or_matrix, GenericPDInfo, AffyGenePDInfo, SnpSuperSet, TilingPDInfo, gSetList, AlleleSet, GeneFeatureSet, BeadStudioSet, SnpCnvFeatureSet, SnpSet2, AffyExonPDInfo, CopyNumberSet, SnpFeatureSet, GenericFeatureSet, ExonFeatureSet, BafLrrSetList, AffyTilingPDInfo, AffyExpressionPDInfo, DBPDInfo, TilingFeatureSet, GenomeAnnotatedDataFrame, FeatureSet, oligoSetList",35
+"OmaDB","",0
+"OmicCircos","",0
+"OmnipathR","",0
+"ontoProc","TermSet",1
+"openCyto","gatingTemplate",1
+"ORFik","covRle, experiment, covRleList",3
+"Organism.dplyr","BasicFilter",1
+"OrganismDbi","OrganismDb",1
+"orthogene","",0
+"PADOG","",0
+"pathview","",0
+"pcaMethods","nlpcaNet, nniRes, pcaRes",3
+"PCAtools","",0
+"PeacoQC","",0
+"pfamAnalyzeR","",0
+"PharmacoGx","",0
+"philr","",0
+"phyloseq","taxonomyTable, dist, otu_table, phylo, sample_data, phyloseq",6
+"piano","",0
+"planet","",0
+"plotgardener","",0
+"plyranges","FileOperator, BamFileOperator, GroupedGenomicRanges, GroupedIntegerRanges, DeferredGenomicRanges",5
+"powerTCR","",0
+"preprocessCore","",0
+"proDA","proDAFit",1
+"profileplyr","profileplyr",1
+"progeny","",0
+"ProtGenerics","ProcessingStep, Param, characterOrFunction",3
+"pvca","",0
+"QDNAseq","QDNAseqCopyNumbers, QDNAseqReadCounts",2
+"QFeatures","NumericVariableFilter, AssayLink, QFeatures, CharacterVariableFilter, AssayLinks",5
+"quantiseqr","",0
+"quantro","quantro",1
+"quantsmooth","",0
+"qusage","QSarray",1
+"qvalue","",0
+"R4RNA","",0
+"RaggedExperiment","RaggedExperiment",1
+"RankProd","",0
+"RBGL","",0
+"Rbowtie","",0
+"Rbowtie2","",0
+"RCy3","spoofResponse",1
+"ReactomeGSA","ReactomeAnalysisResult",1
+"ReactomePA","",0
+"ReadqPCR","qPCRBatch, CyclesSet",2
+"rebook","",0
+"recount","",0
+"recount3","",0
+"RedeR","RedPort",1
+"regioneR","",0
+"Repitools","ChromaResults, MappabilitySource, BayMethList, SequenceQC, CopyEstimate, GCAdjustParams, AdjustedCopyEstimate, QdnaData, SequenceQCSet, ScoresList, ClusteredScoresList, FastQC, RegionStats",13
+"ResidualMatrix","ResidualMatrixSeed, ResidualMatrix",2
+"rGADEM","motif, align, parameters, gadem",4
+"Rgraphviz","pEdge, Ragraph, BezierCurve, AgTextLabel, pNode, xyPoint, AgEdge, boundingBox, AgNode",9
+"rGREAT","GreatObject, GreatJob",2
+"rhdf5","",0
+"rhdf5filters","",0
+"Rhdf5lib","",0
+"Rhisat2","",0
+"Rhtslib","",0
+"RnBeads","RnBSet, RnBClusterRun, Report, RnBDiffMeth, ReportGgPlot, ClusterArchitecture, RnBiseqSet, ReportPlot, RnBeadClustering, RnBeadSet, RnBeadRawSet",11
+"ROC","rocc",1
+"rols","",0
+"ropls","oplsMultiDataSet, opls",2
+"ROTS","",0
+"RProtoBufLib","",0
+"rpx","",0
+"Rqc","RqcResultSet",1
+"rrvgo","",0
+"Rsamtools","BamFileList, BcfFile, RsamtoolsFile, FaFileList, BamFile, ScanBcfParam, BcfFileList, ScanBamParam, BamSampler, BamViews, FaFile, PileupParam, RsamtoolsFileList, PileupFiles, ScanBVcfParam, TabixFile, ApplyPileupsParam, TabixFileList",18
+"Rsubread","",0
+"RTCGA","",0
+"RTCGAToolbox","FirehoseCGHArray, FirehoseGISTIC, FirehoseMethylationArray, DGEResult, FirehoseData, FirehosemRNAArray, CorResult",7
+"rtracklayer","BEDPEFile, BigBedSelection, BrowserSession, UCSCSchema, TwoBitFile, ChainFile, FastaFile, BrowserView, BigWigSelection, UCSCData, BEDFile, BEDGraphFile, BED15File, Track, Quickload, GFF1File, RTLFile, GraphTrackLine, UCSCFile, GFF3File, TrackContainer, GFF2File, TrackHubGenome, Bed15TrackLine, UCSCTrackModes, BigWigFile, GVFFile, BasicTrackLine, TrackHub, QuickloadGenome, WIGFile, TrackLine, BigWigFileList, GTFFile, UCSCSession, BrowserViewList, RTLFileList, UCSCView, BigBedFile, GFFFile",40
+"RUVSeq","",0
+"rWikiPathways","",0
+"S4Arrays","Array, DummyArrayViewport, RegularArrayGrid, ArbitraryArrayGrid, ArrayViewport, SafeArrayViewport, ArrayGrid, DummyArrayGrid",8
+"S4Vectors","atomic, integer_OR_LLint, TransposedDataFrame, Factor, RectangularData, DataFrameFactor, SortedByQuerySelfHits, List, FilterMatrix, Hits, DataFrame, Rle, list_OR_List, NSBS, Pairs, SortedByQueryHits, Annotated, HitsList, integer_OR_raw, character_OR_NULL, DataFrame_OR_NULL, FilterRules, SelfHits, vector_OR_factor, LLint, DFrame, vector_OR_Vector, SortedByQueryHitsList, expression_OR_function, Vector, SimpleList",31
+"safe","SAFE",1
+"sangeranalyseR","QualityReport, SangerContig, ChromatogramParam, ObjectResults, SangerRead, SangerAlignment",6
+"sangerseqR","abif, scf, sangerseq",3
+"satuRn","StatModel",1
+"SC3","",0
+"ScaledMatrix","ScaledMatrixSeed, ScaledMatrix",2
+"scater","SCESet",1
+"scDblFinder","",0
+"scde","",0
+"scds","",0
+"schex","",0
+"scmap","",0
+"scMerge","",0
+"scran","",0
+"scRepertoire","",0
+"scry","",0
+"scuttle","outlier.filter",1
+"SeqArray","SeqVarGDSClass",1
+"seqLogo","pwm",1
+"seqPattern","",0
+"SeqVarTools","SeqVarWindowIterator, SeqVarBlockIterator, SeqVarIterator, SeqVarListIterator, SeqVarRangeIterator, SeqVarData",6
+"sesame","",0
+"SGSeq","",0
+"ShortRead","IntensityInfo, ExperimentPath, QAFrequentSequence, SolexaRealignQA, SRFilterResult, .Solexa, ShortRead, FastqStreamerList, FastqSamplerList, MatrixQuality, SolexaIntensityInfo, RochePath, QANucleotideByCycle, QAReadQuality, trellis, ShortReadFile, QAQualityUse, RocheSet, NumericQuality, MAQMapQA, IntensityMeasure, .SRUtil, ShortReadQQA, AlignedRead, .ShortReadBase, QANucleotideUse, SRSet, SolexaIntensity, AlignedDataFrame, QASequenceUse, SRError, BowtieQA, QAData, SpTrellis, .QA2, QAFiltered, QAFlagged, SnapshotFunctionList, FastqFileReader, .Roche, FastqQuality, QACollate, FastqFileList, FastqSampler, SRFilter, SRWarn, QAAdapterContamination, .QA, SolexaPath, FastqStreamer, SolexaExportQA, FastqQA, SolexaSet, QAQualityByCycle, ArrayIntensity, QASource, QualityScore, SFastqQuality, RtaIntensity, IntegerQuality, FastqFile, ShortReadQ, Intensity, SRList, SRVector, Snapshot, QASummary, SnapshotFunction, QAFastqSource, QA",70
+"sigFeature","",0
+"siggenes","sumEBAM, SAM, EBAM, FindA0, sumSAM",5
+"SIMLR","",0
+"simplifyEnrichment","",0
+"SingleCellExperiment","reduced.dim.matrix, LinearEmbeddingMatrix, SingleCellExperiment",3
+"SingleCellSignalR","",0
+"singleCellTK","",0
+"SingleR","",0
+"singscore","",0
+"slingshot","SlingshotDataSet",1
+"SNPRelate","",0
+"snpStats","SingleSnpTests, XSnpMatrix, GlmEstimates, ImputationRules, GlmTests, SnpMatrix, SingleSnpTestsScore",7
+"soGGi","ChIPprofile",1
+"SparseArray","SVT_SparseMatrix, COO_SparseMatrix, SparseMatrix, SparseArray, NULL_OR_list, SVT_SparseArray, COO_SparseArray",7
+"sparseMatrixStats","",0
+"SpatialExperiment","RemoteSpatialImage, StoredSpatialImage, LoadedSpatialImage, SpatialExperiment, VirtualSpatialImage",5
+"Spectra","MsBackendMemory, MsBackendMzR, MsBackendDataFrame, Spectra, MsBackendCached, MsBackend",6
+"SPIA","",0
+"splatter","SimpleParams, ZINBParams, SCDDParams, SparseDCParams, SplatPopParams, PhenoParams, SplatParams, BASiCSParams, MFAParams, KersplatParams, LunParams, Lun2Params",12
+"SPOTlight","",0
+"SRAdb","",0
+"stageR","stageRTx, stageR",2
+"STRINGdb","STRINGdb",1
+"StructuralVariantAnnotation","",0
+"SummarizedExperiment","RangedSummarizedExperiment, SimpleAssays, Assays_OR_NULL, ShallowSimpleListAssays, ShallowData, SummarizedExperiment, Assays",7
+"supraHex","",0
+"survcomp","",0
+"sva","",0
+"synergyfinder","",0
+"systemPipeR","SYSargs2, INTERSECTset, catDB, SYSargs, SYSargsList, VENNset, LineWise",7
+"TCC","TCC",1
+"TCGAbiolinks","",0
+"TCGAutils","",0
+"tidybulk","",0
+"tidySingleCellExperiment","",0
+"tidySummarizedExperiment","",0
+"tkWidgets","colInfo",1
+"TOAST","",0
+"topconfects","",0
+"topGO","elimScore, classicCount, classicExpr, weight01Score, weightCount, topGOresult, classicScore, weight01Count, leaScore, leaExpr, elimExpr, topGOdata, parentChild, leaCount, weight01Expr, elimCount, groupStats, pC",18
+"trackViewer","trackList, trackViewerStyle, track, yaxisStyle, pos, trackStyle, xscale",7
+"tradeSeq","",0
+"TrajectoryUtils","PseudotimeOrdering",1
+"treeio","jplace",1
+"TreeSummarizedExperiment","TreeSummarizedExperiment, LinkDataFrame",2
+"tricycle","",0
+"TSCAN","",0
+"tximeta","",0
+"tximport","",0
+"UCell","",0
+"UniProt.ws","",0
+"universalmotif","universalmotif",1
+"variancePartition","varParFrac, VarParFitList, VarParCIList, mvTest_input, MArrayLM2, varPartResults",6
+"VariantAnnotation","VcfFile, ExpandedVCF, factorRle, characterRle, FiveUTRVariants, VcfFileList, integerOrRle, CompressedVRangesList, VariantType, PROVEANDb, IntronVariants, VCFHeader, AllVariants, SIFTDb, ThreeUTRVariants, logicalRle, SimpleVRangesList, rawRle, CodingVariants, numericRle, complexRle, characterOrRle, PolyPhenDb, VRangesList, PromoterVariants, ScanVcfParam, VRanges, VCF, CollapsedVCF, SpliceSiteVariants, IntergenicVariants, integerRle, factorOrRle",33
+"VennDetail","Venn",1
+"viper","",0
+"vsn","vsnInput, vsn",2
+"wateRmelon","",0
+"widgetTools","widgetView, widget, basicPW",3
+"Wrench","",0
+"XVector","XRawList, XInteger, SharedVector, XVectorList, SharedRaw, SharedRaw_Pool, RdaCollection, XIntegerViews, SharedDouble, XVector, XRaw, XDouble, SharedVector_Pool, RdsCollection, GroupedIRanges, SharedInteger",16
+"zellkonverter","",0
+"zinbwave","ZinbModel",1
+"zlibbioc","",0
